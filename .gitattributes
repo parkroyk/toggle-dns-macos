@@ -1,0 +1,9 @@
+# Normalize all text files to LF in the repository
+* text=auto
+
+# Build script must always be checked out with LF and stay executable on POSIX
+build.sh text eol=lf
+
+# Mark binary artifacts explicitly
+*.app binary
+dist/** binary
